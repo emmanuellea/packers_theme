@@ -1,0 +1,513 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Packers</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="mycss/main.css" rel="stylesheet">
+<link href="mycss/font-awesome.css" rel="stylesheet">
+ <link href="mycss/animate.css" rel="stylesheet">
+ 
+ <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<script src="myjs/jquery-3.2.1.js"></script>
+
+
+<script>
+
+
+$(function() {
+		var selectedClass = "";
+		$(".fil-cat").click(function(){ 
+		selectedClass = $(this).attr("data-rel"); 
+     $("#portfolio").fadeTo(100, 0.1);
+		$("#portfolio div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
+    setTimeout(function() {
+      $("."+selectedClass).fadeIn().addClass('scale-anm');
+      $("#portfolio").fadeTo(300, 1);
+    }, 300); 
+		
+	});
+});
+
+
+ window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+
+
+$(document).ready(function() {
+	
+	$('#myBtn').each(function(){
+    $(this).click(function(){ 
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
+        return false; 
+    });
+});
+    
+});
+
+
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
+  } else {
+    $('nav').removeClass('shrink');
+  }
+});
+
+</script>
+
+<style>
+
+
+#portfolio {  
+    margin: 1rem 0;
+    -webkit-column-count: 3; 
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+    -webkit-column-width: 33.33333333333333%;
+    -moz-column-width: 33.33333333333333%;
+    column-width: 33.33333333333333%;
+}
+.tile { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+
+}
+.tile:hover { 
+
+}
+
+.scale-anm {
+  transform: scale(1);
+}
+
+
+
+.tile img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 1rem;
+  
+}
+
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.tile {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 96%;
+  height: 96%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.tile:hover .overlay {
+ 
+  background: rgba(0, 0, 0, .6);
+}
+
+
+.overlay p {
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+  font-size:25px;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay p a{
+	
+  color:#D72C2E;
+  text-decoration:none;
+}
+
+
+.tile:hover .overlay p{
+  opacity: 1;
+}
+
+.btns{
+    margin: 10px;
+	padding:10px 30px;
+	border:1px solid black;
+	background-color:white;
+	color:grey;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="top_header">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="logo">
+              <img src="images/logo.png" class="img-responsive"/>
+              </div>
+          </div>
+          <div class="col-md-2 col-sm-12 col-xs-12">
+              <div class="contact_top">
+               <h5><span class="glyphicon glyphicon-envelope"></span>MAIL US</h5>
+               <p>info@packers.com</p>  
+              </div>
+          </div>
+          <div class="col-md-2 col-sm-12 col-xs-12">
+              <div class="contact_top">
+               <h5><span class="glyphicon glyphicon-phone-alt"></span>CALL US</h5>
+               <p>+911234567890</p>  
+              </div>
+          </div>
+          <div class="col-md-2 col-sm-12 col-xs-12">
+          <div class="contact_top">
+               <button class="btn_top">GET QUOTE</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+      
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+	  <h3>MENU</h3>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+    
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="about-1.html">Pages</a>
+        <ul class="dropdown-menu">
+          <li><a href="about-1.html">About-1</a></li>
+          <li><a href="about-2.html">About-II</a></li>
+          <li><a href="services-1.html">Services-I</a></li>
+          <li><a href="services2.html">Services-II</a></li>
+        </ul>
+      </li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="storage.html">Storage</a></li>
+       <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="packermovers.html">Transportation</a>
+        <ul class="dropdown-menu">
+          <li><a href="Packmovers.html">packmovers</a></li>
+          <li><a href="air-freight.html">Air Freight</a></li>
+          <li><a href="transportation.html">Road Transportation</a></li>
+          <li><a href="cargo-handling-services.html">Cargo Handling Services</a></li>
+          <li><a href="sea-cargo.html">Sea Crago Movement</a></li>
+          <li><a href="explore-the-other-services.html">Explore other Services</a></li>
+          <li><a href="fairs.html">Fairs and Exhibitions</a></li>
+          <li><a href="transport-custom-brokerage.html">Transport and Custom Brokerage</a></li>
+          <li><a href="warehousing-packaging.html">Warehousing and Packaging</a></li>
+        </ul>
+      </li>
+          
+          <li><a href="tips.html">Tips</a></li>
+          
+          <li><a href="blog.html">Blog</a></li>
+          
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="gallery.html">Gallery</a>
+        <ul class="dropdown-menu">
+          <li><a href="gallery.html">Gallery-1</a></li>
+          <li><a href="gallery-1.html">Gallery-2</a></li>
+          <li><a href="gallery-3.html">Gallery-3</a></li>
+          <li><a href="gallery-4.html">Gallery-4</a></li>
+        </ul>
+      </li>
+          <li><a href="contact.html">Contact</a></li>
+    </ul>
+    
+       <ul class="nav navbar-nav navbar-right">
+      <li><a href="contact.html"><span class="glyphicon glyphicon-search"></span></a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+
+<div class="header-career">
+<div class="container">
+<h3>Gallery</h3>
+<p>Home/<span>Gallery</span></p>
+</div>
+</div>
+
+
+
+<section id="gallery">
+     <div class="container">
+          
+          
+             <div class="toolbar mb2 mt2">
+  <button class="btns fil-cat act" href="" data-rel="all">ALL</button>
+  <button class="btns fil-cat" data-rel="web">BY ROAD</button>
+  <button class="btns fil-cat" data-rel="flyers">CARGO</button>
+  <button class="btns fil-cat" data-rel="bcards">FRAGILE</button>
+  <button class="btns fil-cat" data-rel="bcards">TRANSSHIPMENT</button>
+  <button class="btns fil-cat" data-rel="flyers">WAREHOUSE</button>
+</div> 
+
+<br/>
+ 
+<div id="portfolio">
+  <div class="tile scale-anm web all">
+        <img src="images/delivery2.jpg" alt="" class="img-responsive"/>
+          <div class="overlay">
+        <p><a href="#">Techorion one</a></p>
+        </div>
+  </div>
+  <div class="tile scale-anm bcards all">
+    <img src="images/delivery4.jpg" alt="" class="img-responsive"/>
+    <div class="overlay">
+        <p><a href="#">Techorion Two</a></p>
+        </div>
+  </div>
+  <div class="tile scale-anm web all">
+    <img src="images/delivery5.jpg" alt="" class="img-responsive" />
+   <div class="overlay">
+        <p><a href="#">Techorion Three</a></p>
+        </div>
+  </div>
+  
+  <div class="tile scale-anm web all">
+            <img src="images/drivers.jpg" alt="" class="img-responsive"/>
+            <div class="overlay">
+        <p><a href="#">Techorion one</a></p>
+        </div>
+  </div>
+  
+  <div class="tile scale-anm flyers all">
+        <img src="images/image1.jpg" alt="" class="img-responsive" />
+         <div class="overlay">
+        <p><a href="#">Techorion three</a></p>
+        </div>
+  </div>
+  <div class="tile scale-anm bcards all">
+            <img src="images/delivery4.jpg" alt="" class="img-responsive"/>
+            <div class="overlay">
+        <p><a href="#">Techorion one</a></p>
+        </div>
+  </div>
+  
+  <div class="tile scale-anm flyers all">
+    <img src="images/image2.jpg" alt="" class="img-responsive" />
+     <div class="overlay">
+        <p><a href="#">Techorion Five</a></p>
+        </div>
+  </div>
+  <div class="tile scale-anm flyers all">
+    <img src="images/image3.jpg" alt="" class="img-responsive" />
+    <div class="overlay">
+        <p><a href="#">Techorion Six</a></p>
+        </div>
+  </div>
+  <div class="tile scale-anm web all">
+        <img src="images/image4.jpg" alt="" class="img-responsive" />
+        <div class="overlay">
+        <p><a href="#">Techorion Two</a></p>
+        </div>
+  </div>
+  <div class="tile scale-anm flyers all">
+           <img src="images/support.jpg" alt="" class="img-responsive"/> 
+           <div class="overlay">
+        <p><a href="#">Techorion one</a></p>
+        </div>
+  </div>
+  <div class="tile scale-anm web all">
+        <img src="images/packages2.jpg" alt="" class="img-responsive" />
+        <div class="overlay">
+        <p><a href="#">Techorion one</a></p>
+        </div>
+  </div>
+  <div class="tile scale-anm bcards all">
+            <img src="images/package-storage1.jpg" alt="" class="img-responsive" />
+            <div class="overlay">
+        <p><a href="#">Techorion one</a></p>
+        </div>
+  </div>
+  <div class="tile scale-anm web all">
+       <img src="images/newsupdate1.jpg" alt="" class="img-responsive" /> 
+       <div class="overlay">
+        <p><a href="#">Techorion one</a></p>
+        </div>
+  </div>
+  <div class="tile scale-anm bcards all">
+          <img src="images/wedo2.jpg" alt="" class="img-responsive" /> 
+          <div class="overlay">
+        <p><a href="#">Techorion one</a></p>
+        </div> 
+  </div>
+  <div class="tile scale-anm web all">
+            <img src="images/newsupdate2.jpg" alt="" class="img-responsive" />
+            <div class="overlay">
+        <p><a href="#">Techorion one</a></p>
+        </div>
+  </div> 
+  <div class="tile scale-anm web all">
+      <img src="images/image2.jpg" alt="" class="img-responsive" /> 
+      <div class="overlay">
+        <p><a href="#">Techorion one</a></p>
+        </div> 
+  </div> 
+  <div class="tile scale-anm bcards all">     
+            <img src="images/image1.jpg" alt=""  class="img-responsive"/>
+            <div class="overlay">
+        <p><a href="#">Techorion one</a></p>
+        </div>
+  </div>
+</div>
+
+<div style="clear:both;"></div>   
+     </div>
+</section>
+
+
+
+ <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+
+<section id="footer">
+         <div class="container">
+              <div class="row">
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                       <div class="footer-desc">
+                          <img src="images/light-logo.png" class="img-responsive"/>
+                          <p style="line-height:25px;">PackersNMovers offers an integrated multimodal network of road, air and sea shipping services.</p> 
+                          <h5>Head Quaters:</h5>
+                          <p><i class="fa fa-location-arrow"></i>71 Pilgrim Avenue, Chevy Chase, 
+MD 20815</p>
+                         <p><i class="fa fa-phone"></i>Phone: 0341- 152314214</p>
+                         <p><i class="fa fa-envelope"></i>Packers@movers.com</p>
+                       </div>
+                  </div>
+                   <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="footer-desc">
+                            <h3>CATEGORIES</h3>
+                            <span class="footer-line"></span>
+                            <p><a href="frieght.html"><i class="fa fa-bell"></i>Airfrieght<span class="left">1</span></a></p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><a href="domestic.html"><i class="fa fa-bell"></i>Domestic<span class="left">2</span></a></p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><a href="international.html"><i class="fa fa-bell"></i>International<span class="left">3</span></a></p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><a href="liquids.html"><i class="fa fa-bell"></i>Liquids<span class="left">1</span></a></p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><a href="perishables.html"><i class="fa fa-bell"></i>Perishable<span class="left">2</span></a></p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><a href="shipping.html"><i class="fa fa-bell"></i>Shipping<span class="left">4</span></a></p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><a href="surface.html"><i class="fa fa-bell"></i>Surface<span class="left">5</span></a></p>
+                            
+                        </div>  
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                       <div class="footer-desc">
+                           <h3>RECENT POSTS</h3>
+                           <span class="footer-line"></span>
+                           <p><i class="fa fa-bell"></i>Steps involved in packing the consignment</p>
+                           <p>June 18, 2015</p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><i class="fa fa-bell"></i>Daily road services to major cities</p>
+                            <p>June 18, 2015</p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><i class="fa fa-bell"></i>Checklist for transporting Drugs and Medicines</p>
+                            <p>June 18, 2015</p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><i class="fa fa-bell"></i>How safe is your goods at our warehouse</p>
+                            <p>June 18, 2015</p>
+                            
+                       </div>
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="footer-desc">
+                           <h3>SUBSCRIBE</h3>
+                           <span class="footer-line"></span>
+                           <p>Subscribe to our newsletter, you will receive all the news regarding the update of our super theme.</p>
+                           <input type="text" class="sub-text" placeholder="Your Email ID">
+                           <h4>FOLLOW US</h4>
+                           <span class="footer-line"></span>
+                           <i class="fa fa-facebook"></i>
+                           <i class="fa fa-twitter"></i>
+                           <i class="fa fa-google-plus"></i>
+                           <i class="fa fa-pinterest"></i>
+                        </div>
+                  </div>
+              </div>
+			  
+			  <span class="footer-lastline"></span>
+         </div>
+         
+         <p class="copyright">Copyright © 2018, All Rights Reserved</p>
+ </section>
+
+
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+
+    </script>
+   
+    
+</body>
+</html>

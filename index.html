@@ -1,0 +1,858 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Packers</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="mycss/main.css" rel="stylesheet">
+<link href="mycss/font-awesome.css" rel="stylesheet">
+<link href="mycss/owl.carousel.min.css" rel="stylesheet">
+ <link href="mycss/owl.theme.default.css" rel="stylesheet">
+ <link href="mycss/animate.css" rel="stylesheet">
+ 
+ <link href="https://fonts.googleapis.com/css?family=Mandali" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+ 
+ <link href="mycss/tooltip.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<script src="myjs/jquery-3.2.1.js"></script>
+<script src="Myjs/jquery.tooltip.js"></script>
+
+<link type="text/css" href="cssslider/jquery.bbslider.css" rel="stylesheet" />
+
+
+<script>
+ 
+ $('#demo').tooltip({
+
+  text: '',
+  cls: '',
+  position: 'default',
+  forcePosition: false,
+  animate: false,
+  trigger: 'hover',
+  showDelay: 200,
+  dontHideOnTooltipHover: false,
+  selector: ''
+});
+
+
+ window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+
+
+$(document).ready(function() {
+	
+	$('#myBtn').each(function(){
+    $(this).click(function(){ 
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
+        return false; 
+    });
+});
+    
+});
+
+
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
+  } else {
+    $('nav').removeClass('shrink');
+  }
+});
+
+</script>
+
+<style>
+
+.carousel_data img{
+
+width:100px !important;
+height:100px !important;
+float:left;
+border-radius:50%;
+}
+  
+
+</style>
+
+</head>
+
+<body>
+
+<div class="top_header">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="logo">
+              <img src="images/logo.png" class="img-responsive"/>
+              </div>
+          </div>
+          <div class="col-md-2 col-sm-12 col-xs-12">
+              <div class="contact_top">
+               <h5><span class="glyphicon glyphicon-envelope"></span>MAIL US</h5>
+               <p>info@packers.com</p>  
+              </div>
+          </div>
+          <div class="col-md-2 col-sm-12 col-xs-12">
+              <div class="contact_top">
+               <h5><span class="glyphicon glyphicon-phone-alt"></span>CALL US</h5>
+               <p>+911234567890</p>  
+              </div>
+          </div>
+          <div class="col-md-2 col-sm-12 col-xs-12">
+          <div class="contact_top">
+               <button class="btn_top"><a href="#">GET QUOTE</a></button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+      
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+	  
+	  <h3>MENU</h3>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+    
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="about-1.html">Pages</a>
+        <ul class="dropdown-menu">
+          <li><a href="about-1.html">About-1</a></li>
+          <li><a href="about-2.html">About-II</a></li>
+          <li><a href="services-1.html">Services-I</a></li>
+          <li><a href="services2.html">Services-II</a></li>
+        </ul>
+      </li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="storage.html">Storage</a></li>
+       <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="packmovers.html">Transportation</a>
+        <ul class="dropdown-menu">
+          <li><a href="packmovers.html">Packmovers</a></li>
+          <li><a href="air-freight.html">Air Freight</a></li>
+          <li><a href="transportation.html">Road Transportation</a></li>
+          <li><a href="cargo-handling-services.html">Cargo Handling Services</a></li>
+          <li><a href="sea-cargo.html">Sea Crago Movement</a></li>
+          <li><a href="explore-the-other-services.html">Explore other Services</a></li>
+          <li><a href="fairs.html">Fairs and Exhibitions</a></li>
+          <li><a href="transport-custom-brokerage.html">Transport and Custom Brokerage</a></li>
+          <li><a href="warehousing-packaging.html">Warehousing and Packaging</a></li>
+        </ul>
+      </li>
+          
+          <li><a href="tips.html">Tips</a></li>
+          
+          <li><a href="blo.html">Blog</a></li>
+          
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="gallery.html">Gallery</a>
+        <ul class="dropdown-menu">
+          <li><a href="gallery.html">Gallery-1</a></li>
+          <li><a href="gallery-1.html">Gallery-2</a></li>
+          <li><a href="gallery-3.html">Gallery-3</a></li>
+          <li><a href="gallery-4.html">Gallery-4</a></li>
+        </ul>
+      </li>
+          <li><a href="contact.html">Contact</a></li>
+    </ul>
+    
+       <ul class="nav navbar-nav navbar-right">
+      <li><a href="contact.html"><span class="glyphicon glyphicon-search"></span></a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+
+ <section id="carousel">
+     <div id="auto">
+         
+         <div class="image-container">
+              <img src="images/aboutimage1.jpg" alt="" class="img-responsive"/>
+                  <div class="text-block">
+                       <h4>WORLDWIDE</h4>
+                       <h4>LOGISTIC SERVICE</h4>
+                  </div>
+         </div>
+         <div class="image-container">
+                 <img src="images/aboutimage2.jpg" alt="" class="img-responsive"/>
+                   <div class="text-block">
+                       <h4>WE HELP YOU TO MOVE </h4>
+                       <h4>ANYTHING ANYWHERE</h4>
+                  </div> 
+         </div>
+         <div class="image-container">
+                 <img src="images/seacargo3.jpg" alt="" class="img-responsive"/>
+                       <div class="text-block2">
+                         <div class="text-desc">
+                              <h3 style="padding:10px;">SAFE AND FASTEST LOGISTICS</h3>
+                           </div>
+                             
+                          <div class="text-desc">
+                              <h5><span class="fa fa-train"></span>SHIP TRANSPORTATION</h5>
+                              <p>+Lorem ipsum losjsj hdjkouimdj hdjdkdk hdgfdhdkdkld jkdfkd</p>
+                           </div>
+                           <div class="text-desc">
+                              <h5><span class="fa fa-truck"></span>ROAD TRANSPORTATION</h5>
+                              <p>+Lorem ipsum losjsj hdjkouimdj hdjdkdk hdgfdhdkdkld jkdfkd</p>
+                           </div>
+                           <div class="text-desc">
+                              <h5><span class="fa fa-plane"></span>AIR TRANSPORTATION</h5>
+                              <p>+Lorem ipsum losjsj hdjkouimdj hdjdkdk hdgfdhdkdkld jkdfkd</p>
+                           </div>
+                  </div> 
+                 </div>
+         <div class="image-container">
+                 <img src="images/seacargo.jpg" alt="" class="img-responsive"/>
+                       <div class="text-block">
+                       <h4>TECHORION</h4>
+                  </div> 
+                 </div>
+                 
+            <div class="image-container">
+                 <img src="images/image10.jpg" alt="" class="img-responsive"/>
+                       <div class="text-block">
+                       <h4>WEB DEVELOPMENT</h4>
+                  </div> 
+                 </div>
+    </div>
+ </section>
+ 
+ 
+ <section class="summary-sections">
+       <div class="container">
+           <div class="row text-center">
+               <div class="col-md-3 col-sm-12 col-xs-12 wow fadeInDown" data-wow-delay="1.4s">
+                   <h5><img src="images/icon-11.png">Free Estimate</h5>
+               </div>
+               <div class="col-md-3 col-sm-12 col-xs-12 wow fadeInDown" data-wow-delay="1.1s">
+                    <h5><img src="images/icon-12.png">Flat Rates</h5>
+               </div>
+               <div class="col-md-3 col-sm-12 col-xs-12 wow fadeInDown" data-wow-delay="0.8s">
+                    <h5><img src="images/icon-13.png">Quick Delivery</h5>
+               </div>
+               <div class="col-md-3 col-sm-12 col-xs-12 wow fadeInDown" data-wow-delay="0.5s">
+                    <h5><img src="images/icon-14.png">24/7 Working Hours</h5>
+               </div>
+           </div>
+       </div>
+   
+ </section>
+ 
+ <section class="choose-service">
+     <div class="container text-center">
+         <div class="service text-center wow bounceIn" data-wow-delay="0.5s">
+              <div class="servic-header">
+                  <h3>Choose your Service</h3>
+              </div>
+			  
+			  <span class="span"></span>
+             <div class="row">
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                      <div class="service-image" id="demo" title="Home">
+                      <img src="images/image1.jpg" class="img-responsive"/>
+                      <div class="serv-desc">
+                      <h4>Home</h4>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                      <div class="service-image text-center" id="demo" title="Office">
+                      <img src="images/image2.jpg" class="img-responsive"/>
+                        <div class="serv-desc">
+                      <h4>Office</h4>
+                       </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                      <div class="service-image" id="demo" title="Industrial">
+                      <img src="images/image3.jpg" class="img-responsive"/>
+                      <div class="serv-desc">
+                      <h4>Industrial</h4>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                      <div class="service-image" id="demo" title="Warehouse">
+                      <img src="images/image4.jpg" class="img-responsive"/>
+                      <h4>Warehouse</h4>
+                      </div>
+                  </div>
+             </div>
+			 
+			 <span class="span"></span>
+			 <div class="service-bootom">
+                  <div class="serv-bottom1">
+                  <input type="submit" value="PREVIOUS">
+                  </div>
+                  
+                  <div class="serv-bottom1">
+                  <input type="submit" value="SUBMIT">
+                  </div>
+                  
+                  <div class="serv-bottom1">
+                   <input type="submit" value="NEXT">
+                  </div>
+              </div>
+         </div>
+     </div>
+ </section>
+ 
+ <section id="get-intouch" class="text-center">
+      <div class="container">
+          <div class="main-header wow bounceIn" data-wow-delay="0.5s">
+          <h3>There are several ways to get in touch</h3>
+           <h5>Choose any that suites you</h5>
+           <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered  alteration in
+some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going
+to use a passage of Lorem Ipsum.</p>
+          </div>
+               <div class="row">
+                   <div class="col-md-4 col-sm-12 col-xs-12">
+                       <div class="several-ways wow zoomInUp" data-wow-delay="0.8s">
+                       <span class="fa fa-briefcase"></span>
+                       <h4>Get an Appointment</h4>
+                       <p>Randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
+                       </div>
+                   </div>
+                   <div class="col-md-4 col-sm-12 col-xs-12">
+                       <div class="several-ways wow zoomInUp" data-wow-delay="1.1s">
+                       <span class="fa fa-phone-square"></span>
+                       <h4>Talk to Us</h4>
+                       <p>Then this should be If you are going to use a passage of Lorem Ipsum, hidden in the middle of text. If you are going to use a passage.</p>
+                       </div>
+                   </div>
+                   <div class="col-md-4 col-sm-12 col-xs-12">
+                     <div class="several-ways wow zoomInUp" data-wow-delay="1.4s">
+                       <span class="fa fa-whatsapp"></span>
+                       <h4>Live Chat With Us</h4>
+                       <p>Then this should be If you are going to use a passage of Lorem Ipsum, hidden in the middle of text. If you are going to use a passage.</p>
+                       </div>
+                   </div>
+               </div>
+          </div>
+ </section>
+ 
+ <section id="call-us">
+     <div class="container">
+          <div class="call-us text-center">
+          <img src="images/call-us-icon.png" class="img-responsive wow flipInY" data-wow-delay="0.8s"/>
+          <h1 class="wow flipInY" data-wow-delay="1.1s">91 987-651-2345</h1>
+          <h2 class="wow flipInY" data-wow-delay="1.4s">Make your Packing a Wonderful Experience</h2>
+          <h5 class="wow flipInY" data-wow-delay="1.7ss">(ALL CALLS ARE TOLL FREE)</h5>
+          </div>
+     </div>
+ </section>
+ 
+ <section id="delivery">
+      <div class="container text-center">
+          <div class="main-header wow bounceIn" data-wow-delay="0.8s">
+            <h3>Delivery on Time</h3>
+            <h5>Safe and Secure Services</h5>
+            <p>Randomised words which don’t look even slightly believable. Randomised words which don’t look even slightly believable.
+If you are going to use a passage of Lorem Ipsum.</p>
+          </div>
+              <div class="owl-carousel owl-theme wow fadeInUp" data-wow-delay="1.1s">
+                    <div class="card1">
+                        <img src="images/images.jpg" class="img-responsive"/>
+                        <span class="fa fa-plus"></span>
+                          <div class="desc">
+                             <h5>Convient and Safe Transportation</h5>
+                             <p>Randomised words which don’t look even slightly believable. Randomised words which don’t look even slightly believable.
+If you are going to use a passage of Lorem Ipsum.</p>
+                          </div>
+                    </div>
+                    <div class="card1">
+                        <img src="images/image11.jpg" class="img-responsive"/>
+                           <span class="fa fa-plus"></span>
+                          <div class="desc">
+                             <h5>Home to Home</h5>
+                             <p>Randomised words which don’t look even slightly believable. Randomised words which don’t look even slightly believable.
+If you are going to use a passage of Lorem Ipsum.</p>
+                          </div>
+                    </div>
+                     <div class="card1">
+                        <img src="images/tech3.jpg" class="img-responsive"/>
+                          <span class="fa fa-plus"></span>
+                          <div class="desc">
+                             <h5>Long Distance Delivery</h5>
+                             <p>Randomised words which don’t look even slightly believable. Randomised words which don’t look even slightly believable.
+If you are going to use a passage of Lorem Ipsum.</p>
+                          </div>
+                    </div>
+                    <div class="card1">
+                        <img src="images/image10.jpg" class="img-responsive"/>
+                           <span class="fa fa-plus"></span>
+                          <div class="desc">
+                             <h5>Transpoting Mechandise</h5>
+                             <p>Randomised words which don’t look even slightly believable. Randomised words which don’t look even slightly believable.
+If you are going to use a passage of Lorem Ipsum.</p>
+                          </div>
+                    </div>
+                    <div class="card1">
+                        <img src="images/tech3.jpg" class="img-responsive"/>
+                          <span class="fa fa-plus"></span>
+                          <div class="desc">
+                             <h5>Delivery</h5>
+                             <p>Randomised words which don’t look even slightly believable. Randomised words which don’t look even slightly believable.
+If you are going to use a passage of Lorem Ipsum.</p>
+                          </div>
+                    </div>
+                    <div class="card1">
+                        <img src="images/image11.jpg" class="img-responsive"/>
+                            <span class="fa fa-address-card"></span>
+                          <div class="desc">
+                             <h5>Transpoting Goods</h5>
+                             <p>Randomised words which don’t look even slightly believable. Randomised words which don’t look even slightly believable.
+If you are going to use a passage of Lorem Ipsum.</p>
+                          </div>
+                    </div>
+              </div>
+       </div>
+ </section>
+ 
+ 
+<section id="statistics">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                   <div class="stat-content wow bounceInRight" data-wow-delay="0.8s">
+                      <img src="images/icon-umbrella.png" class="img-responsive"/>
+                      <span class="small-line"></span>
+                       <h2>251112<strong>+</strong></h2>
+                       <p>Packages Delivered</p>
+                   </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                   <div class="stat-content border wow fadeInRight" data-wow-delay="0.8s">
+                      <img src="images/icon-head.png" class="img-responsive"/>
+                      <span class="small-line"></span>
+                       <h2>19300<strong>+</strong></h2>
+                       <p>Repeat Customers</p>
+                   </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                   <div class="stat-content border wow fadeInRight" data-wow-delay="1.1s">
+                      <img src="images/icon-ferry.png" class="img-responsive"/>
+                      <span class="small-line"></span>
+                       <h2>2311<strong>+</strong></h2>
+                       <p>Our Clients</p>
+                   </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                   <div class="stat-content border wow fadeInRight" data-wow-delay="1.4s">
+                      <img src="images/icon-box.png" class="img-responsive"/>
+                      <span class="small-line"></span>
+                       <h2>1122600<strong>+</strong></h2>
+                       <p>Commercial Goods</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section id="to-move">
+      <div class="background">
+       <div class="container">
+           <div class="to-move">
+               <h4 class="wow fadeInLeft" data-wow-delay="1.7s">ARE YOU MOVING</h4>
+               <h2 class="wow fadeInLeft" data-wow-delay="2s">TO MOVE?</h2>
+               <p class="wow fadeInLeft" data-wow-delay="2.2s">We deliver the goods to the most complicated places on earth.</p>
+               <img src="images/offer.jpg" class="img-responsive wow bounceInDown" data-wow-delay="2.4s">
+           </div>
+       </div>
+	   </div>
+</section>
+
+<section id="how-we-work">
+      <div class="container" style="width:94%;">
+       <div class="main-header text-center wow bounceIn" data-wow-delay="0.5s">
+           <h3><span></span>How We Work<span></span></h3>
+           <h5>Safe and Secure Services</h5>
+       </div>
+    <div class="row">
+         <div class="col-md-3 col-sm-12 col-xs-12">
+               <div class="work-desc wow flipInY" data-wow-delay="0.8s">
+                   <img src="images/workimge1.png" class="img-responsive">
+                   <h4>01. Book Us</h4>
+                   <p>Randomised words which don’t look even slightly believable.</p>
+               </div>
+         </div>
+         <div class="col-md-3 col-sm-12 col-xs-12">
+               <div class="work-desc wow flipInY" data-wow-delay="1.1s">
+                   <img src="images/workimg2.png" class="img-responsive">
+                   <h4>02. We Pack your Goods</h4>
+                   <p>Randomised words which don’t look even slightly believable.</p>
+               </div>
+         </div>
+         <div class="col-md-3 col-sm-12 col-xs-12">
+               <div class="work-desc wow flipInY" data-wow-delay="1.4s">
+                   <img src="images/workimg3.png" class="img-responsive">
+                   <h4>03. We Move Your Goods</h4>
+                   <p>Randomised words which don’t look even slightly believable.</p>
+               </div>
+         </div>
+         <div class="col-md-3 col-sm-12 col-xs-12">
+               <div class="work-desc wow flipInY" data-wow-delay="1.7s">
+                   <img src="images/workimg4.png" class="img-responsive">
+                   <h4>04. We Deliver</h4>
+                   <p>Randomised words which don’t look even slightly believable.</p>
+               </div>
+         </div>
+    </div>
+    </div>
+</section>
+
+ <section id="latest-news">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                 <div class="latest-update wow fadeInLeft" data-wow-delay="0.5s">
+                 <h5>Whats Going On</h5>
+                 <h3>LATEST NEWS AND UPDATES</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellent esque dignissim eros a sapien tempus, ut eleifend neque convallis.</p>
+                 <button class="update-button">VIEW ALL NEWS</button>
+                 </div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                 <div class="update-right wow fadeInRight" data-wow-delay="0.8s">
+                 <img src="images/newsupdate1.jpg" class="img-responsive">
+                 <h5>Posted on 18 Jun 2015/ <span></span> 0 Comments</h5>
+                 <h4>Daily road services to major cities</h4>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt nunc lorem, nec faucibus mi facilisis eget. Mauris laoreet, nisl id faucibus pellentesque, mi...
+
+Read More </p>
+                 <button class="update-button">Read More <i class="fa fa-arrow-right"></i></button>
+                 </div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                 <div class="update-right wow fadeInRight" data-wow-delay="1.1s">
+                 <img src="images/newsupdate2.jpg" class="img-responsive">
+                 <h5>Posted on 18 Jun 2015/ <span></span> 0 Comments</h5>
+                 <h4>Pilfer-proof packaging is the need of the hour</h4>
+                 <p>Duis vel orci erat. Aenean quis sem fringilla, scelerisque lectus et, vestibulum arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus vestibulum.. </p>
+                 <button class="update-button">Read More <i class="fa fa-arrow-right"></i></button>
+                 </div>
+              </div>
+          </div>
+      </div>
+ </section>
+ 
+ 
+ <section id="word-clients">
+      <div class="container">
+           <div class="main-header text-center wow bounceIn" data-wow-delay="0.8s">
+               <h3>Words from our Clients</h3>
+               <p>We strive hard to be number ONE!</p>
+           </div>
+           <div class="owl-carousel owl-theme">
+                <div class="carousel_data">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus interdum urna.Phasellus ac lorem ut tellus ornare condimentum. Nulla facilisi. Nulla at facilisis nibh,in ultricies arcu. Fusce elementum mollis eros, vel ultricies enim consequat in.</h5>
+                   
+				   <img src="images/face2.jpg" class="img-responsive img-circle" width="100" height="100">
+                    <h4>JAVIER FLEMING</h4> 
+                    <p>CEO. ICE Ltd</p>
+                </div>
+                <div class="carousel_data">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus interdum urna.Phasellus ac lorem ut tellus ornare condimentum. Nulla facilisi. Nulla at facilisis nibh,in ultricies arcu. Fusce elementum mollis eros, vel ultricies enim consequat in.</h5>
+                    <img src="images/face1.png" class="img-responsive img-circle" width="100" height="100">
+                    <h4>LYNETTE MORRIS</h4> 
+                    <p>System Admin</p>
+                </div>
+                <div class="carousel_data">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus interdum urna.Phasellus ac lorem ut tellus ornare condimentum. Nulla facilisi. Nulla at facilisis nibh,in ultricies arcu. Fusce elementum mollis eros, vel ultricies enim consequat in.</h5>
+                    <img src="images/face5.jpg" class="img-responsive img-circle" width="100" height="100">
+                    <h4>SARAH MARTON</h4> 
+                    <p>Home Maker</p>
+                </div>
+                <div class="carousel_data">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus interdum urna.Phasellus ac lorem ut tellus ornare condimentum. Nulla facilisi. Nulla at facilisis nibh,in ultricies arcu. Fusce elementum mollis eros, vel ultricies enim consequat in.</h5>
+                    <img src="images/face3.jpg" class="img-responsive img-circle" width="100" height="100">
+                    <h4>MADALINE TAYLOR</h4> 
+                    <p>Material Manager</p>
+                </div>
+                <div class="carousel_data">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus interdum urna.Phasellus ac lorem ut tellus ornare condimentum. Nulla facilisi. Nulla at facilisis nibh,in ultricies arcu. Fusce elementum mollis eros, vel ultricies enim consequat in.</h5>
+                    <img src="images/face6.jpg" class="img-responsive img-circle" width="100" height="100"/>
+                    <h4>JAMES ANDERSON</h4> 
+                    <p>Founder, ICE Ltd</p>
+                </div>
+                <div class="carousel_data">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus interdum urna.Phasellus ac lorem ut tellus ornare condimentum. Nulla facilisi. Nulla at facilisis nibh,in ultricies arcu. Fusce elementum mollis eros, vel ultricies enim consequat in.</h5>
+                    <img src="images/face4.jpg" class="img-responsive img-circle" width="100" height="100"/>
+                    <h4>PETER DOES</h4> 
+                    <p>Procument Supplies</p>
+                </div>
+           </div>
+      </div>
+ </section>
+ 
+ <section id="moving-fun">
+         <div class="container" style="width:94%;">
+              <div class="row">
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                       <div class="moving-left wow fadeInLeft" data-wow-delay="0.8s">
+                        <h5>Something about Us</h5>
+                        <h3>Moving is now Hassle Free and Fun with <span style="color:#7164de !important;">Movers.co</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus interdum urna.Phasellus ac lorem ut tellus ornare condimentum. Nulla facilisi. Nulla at facilisis nibh,in ultricies arcu. Fusce elementum mollis eros, vel ultricies enim consequat in.</p><p>
+
+Proin diam turpis, semper vitae libero at, pulvinar eleifend lacus. Maecenas vel nisi dignissim, rutrum metus sit amet, facilisis enim. Maecenas quis elit viverra eros congue pulvinar eu et est. Nam commodo semper nunclo rem ut tellus ornare condimentum. Nulla facilisi. Nulla at facilisis nibh,in ultricies arcu..</p>
+                       </div>
+                  </div>
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                         <div class="moving-video wow bounceIn" data-wow-delay="0.8s" style="padding-top:30px;">
+						 
+						 <iframe width="630" height="380" src="https://www.youtube.com/embed/QKMUlpndCIM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						 </div>
+                  </div>
+              </div>
+         </div>
+ </section>
+ 
+ 
+ <section id="contact">
+       <div class="container text-center">
+           <div class="row">
+               <div class="col-md-3 col-sm-12 col-xs-12">
+                   <div class="contact-desc wow flipInY" data-wow-delay="1.1s">
+                     <i class="fa fa-location-arrow"></i>
+					 
+					 <div class="back">
+                     <h3>OFFICE</h3>
+                     <span class="line"></span>
+                     <p>44 Shirley Ave.</p>
+                     <p>West Chicago, IL 60185</p>
+                   </div>
+				   </div>
+				   
+               </div>
+               <div class="col-md-3 col-sm-12 col-xs-12">
+                   <div class="contact-desc wow flipInY" data-wow-delay="1.4s">
+                     <i class="fa fa-phone"></i>
+					 
+					 <div class="back">
+                     <h3>CALL US</h3>
+                     <span class="line"></span>
+                     <p>900-344-1147</p>
+                     <p>132-332-4476</p>
+					 </div>
+					 
+                   </div>
+               </div>
+               <div class="col-md-3 col-sm-12 col-xs-12">
+                   <div class="contact-desc wow flipInY" data-wow-delay="1.7s">
+                     <i class="fa fa-envelope"></i>
+					 
+					 <div class="back">
+                     <h3>MAIL US</h3>
+                     <span class="line"></span>
+                     <p>info@packers.com</p>
+                     <p>someone@domain.com</p>
+					</div>
+					
+                   </div>
+               </div>
+               <div class="col-md-3 col-sm-12 col-xs-12">
+                   <div class="contact-desc wow flipInY" data-wow-delay="2.1s">
+                     <i class="fa fa-clock-o"></i>
+					 
+					 <div class="back">
+                     <h3>OPENNING HOURS</h3>
+                     <span class="line"></span>
+                     <p>Mon – Sat 9 am to 8 pm</p>
+                     <p>Sun – 10 am to 3 pm</p>
+                   </div>
+				  </div>
+				  
+               </div>
+           </div>
+       </div>
+ </section>
+ 
+ 
+ <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+ 
+ 
+ <section id="footer">
+         <div class="container">
+              <div class="row">
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                       <div class="footer-desc">
+                          <img src="images/light-logo.png" class="img-responsive"/>
+                          <p style="line-height:25px;">PackersNMovers offers an integrated multimodal network of road, air and sea shipping services.</p> 
+                          <h5>Head Quaters:</h5>
+                          <p><i class="fa fa-location-arrow"></i>71 Pilgrim Avenue, Chevy Chase, 
+MD 20815</p>
+                         <p><i class="fa fa-phone"></i>Phone: 0341- 152314214</p>
+                         <p><i class="fa fa-envelope"></i>Packers@movers.com</p>
+                       </div>
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="footer-desc">
+                            <h3>CATEGORIES</h3>
+                            <span class="footer-line"></span>
+                            <p><a href="frieght.html"><i class="fa fa-bell"></i>Airfrieght<span class="left">1</span></a></p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><a href="domestic.html"><i class="fa fa-bell"></i>Domestic<span class="left">2</span></a></p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><a href="international.html"><i class="fa fa-bell"></i>International<span class="left">3</span></a></p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><a href="liquids.html"><i class="fa fa-bell"></i>Liquids<span class="left">1</span></a></p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><a href="perishables.html"><i class="fa fa-bell"></i>Perishable<span class="left">2</span></a></p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><a href="shipping.html"><i class="fa fa-bell"></i>Shipping<span class="left">4</span></a></p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><a href="surface.html"><i class="fa fa-bell"></i>Surface<span class="left">5</span></a></p>
+                            
+                        </div>  
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                       <div class="footer-desc">
+                           <h3>RECENT POSTS</h3>
+                           <span class="footer-line"></span>
+                           <p><i class="fa fa-bell"></i>Steps involved in packing the consignment</p>
+                           <p>June 18, 2015</p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><i class="fa fa-bell"></i>Daily road services to major cities</p>
+                            <p>June 18, 2015</p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><i class="fa fa-bell"></i>Checklist for transporting Drugs and Medicines</p>
+                            <p>June 18, 2015</p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><i class="fa fa-bell"></i>How safe is your goods at our warehouse</p>
+                            <p>June 18, 2015</p>
+                            
+                       </div>
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="footer-desc">
+                           <h3>SUBSCRIBE</h3>
+                           <span class="footer-line"></span>
+                           <p>Subscribe to our newsletter, you will receive all the news regarding the update of our super theme.</p>
+                           <input type="text" class="sub-text" placeholder="Your Email ID">
+                           <h4>FOLLOW US</h4>
+                           <span class="footer-line"></span>
+                           <i class="fa fa-facebook"></i>
+                           <i class="fa fa-twitter"></i>
+                           <i class="fa fa-google-plus"></i>
+                           <i class="fa fa-pinterest"></i>
+                        </div>
+                  </div>
+              </div>
+			  
+			  <span class="footer-lastline"></span>
+         </div>
+         
+         <p class="copyright">Copyright © 2018, All Rights Reserved</p>
+ </section>
+
+  
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="Myjs/owl.carousel.min.js"></script>
+    <script src="Myjs/owl.carousel.js"></script>
+    
+    <script type="text/javascript" src="jsslider/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="jsslider/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="jsslider/jquery.bbslider.min.js"></script>
+<script src="Myjs/wow.js"></script>
+    
+    
+    <script>
+	$('#auto').bbslider({
+      auto: true,
+	  timer:3000,
+	  loop:true
+	  });
+	  
+	  
+	  $(document).ready(function() 
+	{
+	
+	$('.owl-carousel').owlCarousel({
+		
+		
+	loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true,
+			loop:true,
+			autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true
+        },
+        600:{
+            items:2,
+            nav:false,
+			loop:true,
+			autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:true,
+			autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true
+        }
+		
+	}
+		
+		});
+	
+	
+	new WOW().init();
+} );
+	  
+    </script>
+   
+    
+</body>
+</html>

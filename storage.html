@@ -1,0 +1,632 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Packers</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="mycss/main.css" rel="stylesheet">
+<link href="mycss/font-awesome.css" rel="stylesheet">
+ <link href="mycss/animate.css" rel="stylesheet">
+ <link href="mycss/hover.css" rel="stylesheet">
+ 
+ <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<script src="myjs/jquery-3.2.1.js"></script>
+
+
+<script>
+
+ window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+$(document).ready(function() {
+	
+	$('#myBtn').each(function(){
+    $(this).click(function(){ 
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
+        return false; 
+    });
+});
+    
+});
+
+
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
+  } else {
+    $('nav').removeClass('shrink');
+  }
+});
+
+function toggleIcon(e) {
+    $(e.target)
+        .prev('.panel-heading')
+        .find(".more-less")
+        .toggleClass('glyphicon-plus glyphicon-minus');
+}
+$('.panel-group').on('hidden.bs.collapse', toggleIcon);
+$('.panel-group').on('shown.bs.collapse', toggleIcon);
+
+</script>
+
+<style>
+
+	
+.storage-desc,.h
+.storage-desc * {
+	box-sizing: border-box;
+}
+.storage-desc {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.storage-desc img {
+	max-width: 100%;
+}
+.storage-desc .disp-img {
+	display: block;
+}
+.storage-desc .img-desc {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 10px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.storage-desc:hover .img-desc,
+.storage-desc.active .img-desc {
+	opacity: 1;
+}
+.storage-desc .hover-content {
+	text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.storage-desc .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.storage-desc.active .hvrbox-text_mobile {
+	display: block;
+}
+
+
+.more-less {
+	    color:#E3E1E1;
+		padding:8px;
+		padding-right:17px;
+		background-color:#CCCACA;
+    }
+	
+.panel{
+		background-color:none !important;
+		}
+		
+.package-storage img{
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="top_header">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="logo">
+              <img src="images/logo.png" class="img-responsive"/>
+              </div>
+          </div>
+          <div class="col-md-2 col-sm-12 col-xs-12">
+              <div class="contact_top">
+               <h5><span class="glyphicon glyphicon-envelope"></span>MAIL US</h5>
+               <p>info@packers.com</p>  
+              </div>
+          </div>
+          <div class="col-md-2 col-sm-12 col-xs-12">
+              <div class="contact_top">
+               <h5><span class="glyphicon glyphicon-phone-alt"></span>CALL US</h5>
+               <p>+911234567890</p>  
+              </div>
+          </div>
+          <div class="col-md-2 col-sm-12 col-xs-12">
+          <div class="contact_top">
+               <button class="btn_top">GET QUOTE</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+      
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+	  
+	  <h3>MENU</h3>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+    
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="about-1.html">Pages</a>
+        <ul class="dropdown-menu">
+          <li><a href="about-1.html">About-1</a></li>
+          <li><a href="about-2.html">About-II</a></li>
+          <li><a href="services-1.html">Services-I</a></li>
+          <li><a href="services2.html">Services-II</a></li>
+        </ul>
+      </li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="storage.html">Storage</a></li>
+       <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="packmovers.html">Transportation</a>
+        <ul class="dropdown-menu">
+          <li><a href="packmovers.html">Packmovers</a></li>
+          <li><a href="air-freight.html">Air Freight</a></li>
+          <li><a href="transportation.html">Road Transportation</a></li>
+          <li><a href="cargo-handling-services.html">Cargo Handling Services</a></li>
+          <li><a href="sea-cargo.html">Sea Crago Movement</a></li>
+          <li><a href="explore-the-other-services.html">Explore other Services</a></li>
+          <li><a href="fairs.html">Fairs and Exhibitions</a></li>
+          <li><a href="transport-custom-brokerage.html">Transport and Custom Brokerage</a></li>
+          <li><a href="warehousing-packaging.html">Warehousing and Packaging</a></li>
+        </ul>
+      </li>
+          
+          <li><a href="tips.html">Tips</a></li>
+          
+          <li><a href="blog.html">Blog</a></li>
+          
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="gallery.html">Gallery</a>
+        <ul class="dropdown-menu">
+          <li><a href="gallery.html">Gallery-1</a></li>
+          <li><a href="gallery-1.html">Gallery-2</a></li>
+          <li><a href="gallery-3.html">Gallery-3</a></li>
+          <li><a href="gallery-4.html">Gallery-4</a></li>
+        </ul>
+      </li>
+          <li><a href="contact.html">Contact</a></li>
+    </ul>
+    
+       <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+
+
+<div class="header-career">
+<div class="container">
+<h3>Storage</h3>
+<p>Home/<span>Storage</span></p>
+</div>
+</div>
+
+
+<section id="storage">
+      <div class="container">
+           <div class="row">
+               <div class="col-md-6 col-sm-12 col-xs-12">
+                   <div class="storage-desc wow zoomInDown" data-wow-delay="0.5s">
+                       <img src="images/drivers.jpg" class="img-responsive disp-img img-size1"/>
+                       <div class="img-desc">
+                       
+                       <div class="hover-content">
+                         <h3>State of the art  Transshipment yard</h3>
+                         <p>An intermediate destination such as PackersNMovers Transshipment Yard housing more than 50 vehicles in their plant.</p>
+                        <a href="#"> <button class="btn-storage hvr-sweep-to-right">READ MORE</button></a>
+                       </div>
+                       </div>
+                   </div>
+                   
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                         <div class="storage-desc wow zoomInDown" data-wow-delay="1.1s">
+                       <img src="images/image3.jpg" class="img-responsive img-size"/>
+                       <div class="img-desc">
+                         <h3>Surface Transporting</h3>
+                         <p>An intermediate destination such as PackersNMovers Transshipment Yard housing more than 50 vehicles in their plant.</p>
+                        <a href="#"> <button class="btn-storage">READ MORE</button></a>
+                       </div>
+                   </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                               <div class="storage-desc wow zoomInDown" data-wow-delay="0.8s">
+                               <img src="images/image2.jpg" class="img-responsive img-size"/>
+                               <div class="img-desc">
+                              <h3>Courteous Staff</h3>
+                              <p>An intermediate destination such as PackersNMovers Transshipment Yard housing more than 50 vehicles in their plant.</p>
+                        <a href="#"> <button class="btn-storage">READ MORE</button></a>
+                             </div>
+                   </div>
+                        </div>
+                    </div>
+                        
+                        <div class="storage-desc wow zoomInDown" data-wow-delay="1.4s">
+                       <img src="images/blog1.jpg" class="img-responsive img-size2"/>
+                       <div class="img-desc">
+                         <h3>Corrugated Boxes for Packaging</h3>
+                         <p>An intermediate destination such as PackersNMovers Transshipment Yard housing more than 50 vehicles in their plant. These are used for transporting oils.</p>
+                       <a href="#"> <button class="btn-storage">READ MORE</button></a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+      </div>
+</section>
+
+
+<section id="sta" class="wow fadeInUp" data-wow-delay="0.5s">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                   <div class="stat-content wow fadeInRight" data-wow-delay="0.8s">
+                      <img src="images/icon-umbrella.png" class="img-responsive"/>
+                      <span class="small-line"></span>
+                       <h2> 251112</h2>
+                       <p>Packages Delivered</p>
+                   </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                   <div class="stat-content border wow fadeInRight" data-wow-delay="1.1s">
+                      <img src="images/icon-head.png" class="img-responsive"/>
+                      <span class="small-line"></span>
+                       <h2> 19000+</h2>
+                       <p>Repeat Customers</p>
+                   </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                   <div class="stat-content border wow fadeInRight" data-wow-delay="1.4s">
+                      <img src="images/icon-ferry.png" class="img-responsive"/>
+                      <span class="small-line"></span>
+                       <h2> 2311</h2>
+                       <p>Our Clients</p>
+                   </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                   <div class="stat-content border wow fadeInRight" data-wow-delay="1.7s">
+                      <img src="images/icon-box.png" class="img-responsive"/>
+                      <span class="small-line"></span>
+                       <h2> 1122600+</h2>
+                       <p>Commercial Goods</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+<section id="package-storage">
+      <div class="container text-center">
+           <div class="row">
+                 <div class="col-md-4 col-sm-12 col-xs-12">
+                       <div class="package-storage">
+                           <img src="images/package-storage1.jpg" class="img-responsive wow fadeInDown" data-wow-delay="0.5s"/>
+                           <div class="package-desc">
+                               <span class="fa fa-star wow zoomInDown" data-wow-delay="0.8s"></span>
+                                <h3 class="wow zoomInDown" data-wow-delay="1.1s">State of the art Trucks</h3>
+                               <p class="wow zoomInDown" data-wow-delay="1.2s">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu</p>
+                              <a href="#"> <button class="btn-package wow zoomInDown" data-wow-delay="1.5s">READ MORE</button></a>
+                           </div>
+                       </div>
+                 </div>
+                 <div class="col-md-4 col-sm-12 col-xs-12">
+                      <div class="package-storage">
+                           <img src="images/package-storage2.jpg" class="img-responsive wow fadeInDown" data-wow-delay="1.5s"/>
+                           <div class="package-desc">
+                               <span class="fa fa-star wow zoomInDown" data-wow-delay="1.8s"></span>
+                                <h3 class="wow zoomInDown" data-wow-delay="2s">Packaging of Fragile Goods</h3>
+                               <p class="wow zoomInDown" data-wow-delay="2.2s">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu</p>
+                             <a href="#">  <button class="btn-package wow zoomInDown" data-wow-delay="2.5s">READ MORE</button></a>
+                           </div>
+                       </div>
+                 </div>
+                 <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="package-storage">
+                           <img src="images/package-storage3.jpg" class="img-responsive wow fadeInDown" data-wow-delay="2.5s"/>
+                           <div class="package-desc">
+                               <span class="fa fa-star wow zoomInDown" data-wow-delay="2.8s"></span>
+                                <h3 class="wow zoomInDown" data-wow-delay="3s">Door Delivery of Goods</h3>
+                               <p class="wow zoomInDown" data-wow-delay="3.2s">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu</p>
+                           <a href="#">    <button class="btn-package wow zoomInDown" data-wow-delay="3.5s">READ MORE</button></a>
+                           </div>
+                       </div>
+                 </div>
+           </div>
+      </div>
+</section>
+
+<section id="nullnull">
+      <div class="container">
+            <div class="null-header"></div>
+            <div class="row">
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="null-desc wow flipInY" data-wow-delay="0.8s">
+                              <img src="images/shipping1.png" class="img-responsive"/>
+                            <h3>Cargo Delivery</h3>
+                        </div>
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="null-desc wow flipInY" data-wow-delay="0.8s">
+                            <img src="images/shipping2.png" class="img-responsive"/>
+                            <h3>Safe Shipment</h3>
+                        </div>
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="null-desc wow flipInY" data-wow-delay="0.8s">
+                             <img src="images/shipping3.png" class="img-responsive"/>
+                            <h3>Premium Services</h3>
+                        </div>
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                       
+                       <div class="null-desc wow flipInY" data-wow-delay="0.8s">
+                             <img src="images/shiping4.png" class="img-responsive"/>
+                            <h3>Courier Services</h3>
+                        </div>
+
+                  </div>
+            </div>
+      </div>
+</section>
+
+
+<section id="faq-questions">
+      <div class="container">
+            <div class="row">
+                 <div class="col-md-6 col-sm-12 col-xs-12">
+                       <div class="faq-qusetion wow fadeInLeft" data-wow-delay="0.5s">
+                          <img src="images/faq-question.jpg" class="img-responsive cargo-service-img"/>
+                       </div>
+                 </div>
+                 <div class="col-md-6 col-sm-12 col-xs-12">
+                      <div class="faq-qusetion wow fadeInRight" data-wow-delay="0.5s">
+                          <h2>FAQ Section</h2>
+                          <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.</p>
+                          
+                <!---------collapse--------------->
+                          
+  <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        <i class="more-less glyphicon glyphicon-plus"></i>
+        What is taxable service in cargo handling?</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        <i class="more-less glyphicon glyphicon-plus"></i>
+        Is loading and unloading part of cargo handling services?</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        <i class="more-less glyphicon glyphicon-plus"></i>
+        How Much is a full container load?</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    </div>
+  </div>
+  
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+        <i class="more-less glyphicon glyphicon-plus"></i>
+        What is export/import consolidation of sea frieght?</a>
+      </h4>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+        <i class="more-less glyphicon glyphicon-plus"></i>
+        What is ATA carnet Form?</a>
+      </h4>
+    </div>
+    <div id="collapse5" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    </div>
+  </div>
+</div>
+                          
+                          <!------------end collapse------------>
+                       </div>
+                 </div>
+            </div>
+      </div>
+</section>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+
+
+<section id="footer">
+         <div class="container">
+              <div class="row">
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                       <div class="footer-desc">
+                          <img src="images/light-logo.png" class="img-responsive"/>
+                          <p style="line-height:25px;">PackersNMovers offers an integrated multimodal network of road, air and sea shipping services.</p> 
+                          <h5>Head Quaters:</h5>
+                          <p><i class="fa fa-location-arrow"></i>71 Pilgrim Avenue, Chevy Chase, 
+MD 20815</p>
+                         <p><i class="fa fa-phone"></i>Phone: 0341- 152314214</p>
+                         <p><i class="fa fa-envelope"></i>Packers@movers.com</p>
+                       </div>
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="footer-desc">
+                            <h3>CATEGORIES</h3>
+                            <span class="footer-line"></span>
+                            <p><a href="frieght.html"><i class="fa fa-bell"></i>Airfrieght<span class="left">1</span></a></p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><a href="domestic.html"><i class="fa fa-bell"></i>Domestic<span class="left">2</span></a></p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><a href="international.html"><i class="fa fa-bell"></i>International<span class="left">3</span></a></p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><a href="liquids.html"><i class="fa fa-bell"></i>Liquids<span class="left">1</span></a></p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><a href="perishables.html"><i class="fa fa-bell"></i>Perishable<span class="left">2</span></a></p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><a href="shipping.html"><i class="fa fa-bell"></i>Shipping<span class="left">4</span></a></p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><a href="surface.html"><i class="fa fa-bell"></i>Surface<span class="left">5</span></a></p>
+                            
+                        </div>  
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                       <div class="footer-desc">
+                           <h3>RECENT POSTS</h3>
+                           <span class="footer-line"></span>
+                           <p><i class="fa fa-bell"></i>Steps involved in packing the consignment</p>
+                           <p>June 18, 2015</p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><i class="fa fa-bell"></i>Daily road services to major cities</p>
+                            <p>June 18, 2015</p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><i class="fa fa-bell"></i>Checklist for transporting Drugs and Medicines</p>
+                            <p>June 18, 2015</p>
+                            <span class="bottom-line"></span>
+                            
+                            <p><i class="fa fa-bell"></i>How safe is your goods at our warehouse</p>
+                            <p>June 18, 2015</p>
+                            
+                       </div>
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="footer-desc">
+                           <h3>SUBSCRIBE</h3>
+                           <span class="footer-line"></span>
+                           <p>Subscribe to our newsletter, you will receive all the news regarding the update of our super theme.</p>
+                           <input type="text" class="sub-text" placeholder="Your Email ID">
+                           <h4>FOLLOW US</h4>
+                           <span class="footer-line"></span>
+                           <i class="fa fa-facebook"></i>
+                           <i class="fa fa-twitter"></i>
+                           <i class="fa fa-google-plus"></i>
+                           <i class="fa fa-pinterest"></i>
+                        </div>
+                  </div>
+              </div>
+			  
+			  <span class="footer-lastline"></span>
+         </div>
+         
+         <p class="copyright">Copyright © 2018, All Rights Reserved</p>
+ </section>
+
+
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="Myjs/wow.js"></script>
+    
+    <script>
+
+	$(document).ready(function() 
+	{
+		
+	new WOW().init();	
+} );
+    </script>
+   
+    
+</body>
+</html>

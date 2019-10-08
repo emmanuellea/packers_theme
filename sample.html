@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Packers</title>
+
+<link href="mycss/owl.carousel.min.css" rel="stylesheet">
+ <link href="mycss/owl.theme.default.css" rel="stylesheet">
+<script>
+
+</script>
+
+<style>
+
+.circle { 
+    width: 250px;
+    height: 250px;
+    background-color: #40a977;
+    border-radius: 50%;
+    float: left;
+	padding-right:25px;
+	-webkit-shape-outside:circle();
+	shape-outside:circle();
+}
+
+p:before{
+	content:"";
+	width:0;
+	height:0;
+	boder-bottom:30px solid black;
+	boder-right:15px solid transparent;
+	border-left:15px solid transparent;
+	}
+	
+	h2 {
+    float: left;
+    width: 170px;
+}
+.popup {
+    float: left;
+    width: 340px;
+    background: #727272;
+    padding: 10px;
+    border-radius: 6px;
+    color: #FFF;
+    position: relative;
+    font-size: 12px;
+    line-height: 20px;
+}
+.popup:before {
+    content: "";
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid #727272; 
+    position: absolute;
+    top: 16px;
+    left: -12px;
+}
+
+
+.split {
+  height: 400px;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: red;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  height:150px;
+  border-radius: 50%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<br/>
+
+<div class="owl-carousel owl-theme">
+    <div class="item"><h4>1</h4></div>
+    <div class="item"><h4>2</h4></div>
+    <div class="item"><h4>3</h4></div>
+    <div class="item"><h4>4</h4></div>
+    <div class="item"><h4>5</h4></div>
+    <div class="item"><h4>6</h4></div>
+    <div class="item"><h4>7</h4></div>
+    <div class="item"><h4>8</h4></div>
+    <div class="item"><h4>9</h4></div>
+    <div class="item"><h4>10</h4></div>
+    <div class="item"><h4>11</h4></div>
+    <div class="item"><h4>12</h4></div>
+</div>
+
+
+<br/>
+
+<div class="circle"></div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ducimus, minus distinctio quae alias velit vel quas aliquid laboriosam, expedita reiciendis, aperiam quos! Soluta necessitatibus commodi adipisci eum optio mollitia.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ducimus, minus distinctio quae alias velit vel quas aliquid laboriosam, expedita reiciendis, aperiam quos! Soluta necessitatibus commodi adipisci eum optio mollitia.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ducimus, minus distinctio quae alias velit vel quas aliquid laboriosam, expedita reiciendis, aperiam quos! Soluta necessitatibus commodi adipisci eum optio mollitia.</p>
+
+<br/>
+
+<h2>What is CSS?</h2>
+<div class="popup">
+    Cascading Style Sheets is a style sheet language used for describing
+    the presentation semantics of a document written in a markup language.
+</div>
+
+
+<br/>
+
+
+<div class="split left">
+  <div class="centered">
+    <img src="images/aboutimage1.jpg" alt="Avatar woman">
+    <h2>Jane Flex</h2>
+    <p>Some text.</p>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <img src="images/aboutimage2.jpg" alt="Avatar man">
+    <h2>John Doe</h2>
+    <p>Some text here too.</p>
+  </div>
+</div>
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="Myjs/owl.carousel.min.js"></script>
+    <script src="Myjs/owl.carousel.js"></script>
+    
+    <script>
+  	
+	$(document).ready(function() 
+	{
+	
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+
+		
+	new WOW().init();	
+} );
+    </script>
+   
+    
+</body>
+</html>
